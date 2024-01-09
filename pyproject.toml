@@ -13,10 +13,11 @@ keywords = ["fastapi", "fastapi caching", "fastapi and caching"]
 
 [tool.poetry.dependencies]
 python = "^3.7"
-fastapi = "0.108.0"
+fastapi = ">=0.100.0"
+redis = ">=4.5.0"
 
 [tool.poetry.group.dev.dependencies]
-fastapi = "0.108.0"
+fastapi = ">=0.100.0"
 
 [build-system]
 requires = ["poetry-core"]
