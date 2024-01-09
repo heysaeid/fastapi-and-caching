@@ -3,11 +3,12 @@ from abc import ABC, abstractmethod
 
 class BaseCache(ABC):
     
-    def __init__(self):
+    def __init__(self, namespace: str = ""):
+        self.namespace = namespace
         self.cache = None
 
     @abstractmethod
-    async def init(self) -> None:
+    async def init(self, connection_url: str) -> None:
         ...
 
     @abstractmethod
