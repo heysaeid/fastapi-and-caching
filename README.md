@@ -20,7 +20,7 @@ from config import settings
 
 
 app = FastAPI()
-cache = RedisCache(namespace="fastapi") # 
+cache = RedisCache(namespace="fastapi")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
