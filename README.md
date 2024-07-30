@@ -1,10 +1,14 @@
 # fastapi-and-caching
 <strong>FastAPI and Caching</strong> is an extension for FastAPI that provides support for various caching mechanisms, allowing you to easily leverage caching within your FastAPI applications.
 
+[![Package version](https://img.shields.io/pypi/v/fastapi-and-caching?color=%2334D058&label=pypi%20package)](https://pypi.org/project/fastapi-and-caching/)
+[![Downloads](https://img.shields.io/pypi/dm/fastapi-and-caching)](https://pypi.org/project/fastapi-and-caching/)
+[![Supported Python versions](https://img.shields.io/pypi/pyversions/fastapi-and-caching.svg?color=%2334D058)](https://pypi.org/project/fastapi-and-caching/)
+[![License](https://img.shields.io/badge/License-MIT-green.svg)](https://github.com/heysaeid/fastapi-and-caching/blob/master/LICENSE)
 
 # Install
 ```
-pip install git+https://github.com/heysaeid/fastapi-and-logging/tree/master
+pip install fastapi-and-caching
 ```
 
 ## How to Use:
@@ -20,7 +24,7 @@ from config import settings
 
 
 app = FastAPI()
-cache = RedisCache(namespace="fastapi") # 
+cache = RedisCache(namespace="fastapi")
 
 @asynccontextmanager
 async def lifespan(app: FastAPI):
